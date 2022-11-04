@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="lib_1">
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-9.14954223496522E-12 2.15231305000785E-12 0.0100051501277164"
+        rpy="0 0 0" />
+      <mass
+        value="3.58861992142899" />
+      <inertia
+        ixx="0.0488897827256441"
+        ixy="-1.03993313544184E-07"
+        ixz="-2.06962168622788E-14"
+        iyy="0.0314899410488933"
+        iyz="1.09764215579706E-14"
+        izz="0.0481145837736092" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link
+    name="left_f_wheel">
+    <inertial>
+      <origin
+        xyz="0 -0.00951014997491817 -6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0478131642517814" />
+      <inertia
+        ixx="1.43412607588861E-05"
+        ixy="9.88848204082449E-22"
+        ixz="-1.10391890826599E-21"
+        iyy="2.455680675401E-05"
+        iyz="-3.15974665806729E-22"
+        izz="1.43412607588861E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/left_f_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/left_f_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_f_joint"
+    type="continuous">
+    <origin
+      xyz="0.09 0.23 -0.07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_f_wheel" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_b_wheel">
+    <inertial>
+      <origin
+        xyz="0 -0.00951014997491817 -3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.0478131642517815" />
+      <inertia
+        ixx="1.43412607588861E-05"
+        ixy="9.92334259929659E-22"
+        ixz="-1.10254027391173E-21"
+        iyy="2.455680675401E-05"
+        iyz="-3.196948795976E-22"
+        izz="1.43412607588861E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/left_b_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/left_b_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_b_joint"
+    type="continuous">
+    <origin
+      xyz="-0.09 0.23 -0.07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_b_wheel" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_f_wheel">
+    <inertial>
+      <origin
+        xyz="0 0.0095101499749182 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0478131642517814" />
+      <inertia
+        ixx="1.4341260758886E-05"
+        ixy="-1.60709970315464E-21"
+        ixz="1.76695081930573E-21"
+        iyy="2.455680675401E-05"
+        iyz="1.04709229357954E-22"
+        izz="1.4341260758886E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/right_f_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/right_f_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_f_joint"
+    type="continuous">
+    <origin
+      xyz="0.09 -0.23 -0.07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_f_wheel" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_b_wheel">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 0.0095101499749182 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0478131642517814" />
+      <inertia
+        ixx="1.4341260758886E-05"
+        ixy="-1.60500738832539E-21"
+        ixz="1.76562401837202E-21"
+        iyy="2.455680675401E-05"
+        iyz="1.08061661847668E-22"
+        izz="1.4341260758886E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/right_b_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/right_b_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_b_joint"
+    type="continuous">
+    <origin
+      xyz="-0.09 -0.23 -0.07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_b_wheel" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="slider">
+    <inertial>
+      <origin
+        xyz="0 -0.01 0"
+        rpy="0 0 0" />
+      <mass
+        value="2.15803650459151" />
+      <inertia
+        ixx="0.0288210376812033"
+        ixy="3.45089411799453E-22"
+        ixz="-4.64904386721842E-18"
+        iyy="0.0418503262816669"
+        iyz="1.81595670281338E-20"
+        izz="0.0131731577007696" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/slider.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/slider.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="slider_joint"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.5315"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="slider" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.1"
+      upper="0.1"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="lidar">
+    <inertial>
+      <origin
+        xyz="0.00252160084218045 -6.50359202984674E-07 -0.00286338347039349"
+        rpy="0 0 0" />
+      <mass
+        value="0.183160216307957" />
+      <inertia
+        ixx="7.19619932118137E-05"
+        ixy="-2.50686402073651E-10"
+        ixz="4.72694420571138E-06"
+        iyy="9.03760878301006E-05"
+        iyz="-1.50440167964167E-11"
+        izz="0.000133937300739048" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://lib_1/meshes/lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.20945 -0.0020017 0.0166"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <!-- <gazebo>
+     <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>base_link</robotBaseFrame>
+    </plugin>
+  </gazebo> -->
+  <gazebo>
+  <!-- <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+    <alwaysOn>true</alwaysOn>
+   
+    <updateRate>40</updateRate>
+    <leftJoint>left_wheel_joint</leftJoint>
+    <rightJoint>right_wheel_joint</rightJoint>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>base_link</robotBaseFrame>
+  </plugin> -->
+  <plugin name="SkidSteerDrivePlugin"
+        filename="skid_steer_drive/libDdsSkidSteerDrivePlugin.so">
+    <dds_domain_id>0</dds_domain_id>
+    <topic_name_twist>cmd_vel</topic_name_twist>
+    <topic_name_odometry>odom</topic_name_odometry>
+    <topic_name_joint>joint</topic_name_joint>
+    <right_front_joint>right_f_wheel</right_front_joint>
+    <right_rear_joint>right_b_wheel</right_rear_joint>
+    <left_front_joint>left_f_wheel</left_front_joint>
+    <left_rear_joint>left_b_wheel</left_rear_joint>
+    <wheel_separation>0.4</wheel_separation>
+    <wheel_diameter>0.15</wheel_diameter>
+    <wheel_torque>5.0</wheel_torque>
+    <update_rate>2</update_rate>
+    <covariance_x>0.0001</covariance_x>
+    <covariance_y>0.0001</covariance_y>
+    <covariance_yaw>0.01</covariance_yaw>
+</plugin>
+</gazebo>
+  <gazebo reference="lidar">
+    <sensor type="ray" name="head_rplidar_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>40</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.57</min_angle>
+            <max_angle>1.57</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.2</min>
+          <max>8</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_rplidar_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>lidar</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+</robot>
